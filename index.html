@@ -710,7 +710,7 @@ main { width:100% !important; height:auto !important; min-height:0 !important; d
     <h2 id="overall-title" class="overall-title">Wallet Overview</h2>
     <div id="overall-wallet" class="overall-address"></div>
   </div>
-  <div class="overall-highlights"><div class="overall-highlight"><span>Total Transactions</span><strong id="overall-4">—</strong></div><div class="overall-highlight"><span>Total Volume</span><strong id="overall-3">—</strong></div><div class="overall-highlight"><span>Active Days</span><strong id="overall-8">—</strong></div></div>
+  <div class="overall-highlights"><div class="overall-highlight"><span>Total Transactions</span><strong id="overall-4">—</strong></div><div class="overall-highlight"><span>ETH Volume</span><strong id="overall-3">—</strong></div><div class="overall-highlight"><span>Active Days</span><strong id="overall-8">—</strong></div></div>
   <div class="overall-details"><div class="overall-detail"><span>First Activity</span><strong id="overall-0">—</strong></div><div class="overall-detail"><span>Wallet Age</span><strong id="overall-5">—</strong></div><div class="overall-detail"><span>ETH Transfers</span><strong id="overall-1">—</strong></div><div class="overall-detail"><span>Smart Contracts</span><strong id="overall-6">—</strong></div><div class="overall-detail"><span>Contract Deploys</span><strong id="overall-7">—</strong></div><div class="overall-detail"><span>Longest Streak</span><strong id="overall-2">—</strong></div><div class="overall-detail"><span>Active Weeks</span><strong id="overall-9">—</strong></div><div class="overall-detail"><span>Active Months</span><strong id="overall-10">—</strong></div><div class="overall-detail"><span>Last Activity</span><strong id="overall-11">—</strong></div></div>
   </div>
   <div class="overall-actions">
@@ -756,7 +756,7 @@ main { width:100% !important; height:auto !important; min-height:0 !important; d
     <div class="year-metric"><span>First Activity</span><strong>Jan 2026</strong></div>
 <div class="year-metric"><span>ETH Transfer</span><strong>96</strong></div>
 <div class="year-metric"><span>Longest Streak</span><strong>28 Days</strong></div>
-<div class="year-metric"><span>Total Volume</span><strong>$11,420</strong></div>
+<div class="year-metric"><span>ETH Volume</span><strong>$11,420</strong></div>
 <div class="year-metric"><span>Total Transaction</span><strong>248</strong></div>
 <div class="year-metric"><span>Wallet Age</span><strong>3 Years</strong></div>
 <div class="year-metric"><span>Smart Contract</span><strong>61</strong></div>
@@ -773,7 +773,7 @@ main { width:100% !important; height:auto !important; min-height:0 !important; d
     <div class="year-metric"><span>First Activity</span><strong>Jan 2025</strong></div>
 <div class="year-metric"><span>ETH Transfer</span><strong>138</strong></div>
 <div class="year-metric"><span>Longest Streak</span><strong>56 Days</strong></div>
-<div class="year-metric"><span>Total Volume</span><strong>$18,650</strong></div>
+<div class="year-metric"><span>ETH Volume</span><strong>$18,650</strong></div>
 <div class="year-metric"><span>Total Transaction</span><strong>365</strong></div>
 <div class="year-metric"><span>Wallet Age</span><strong>2 Years</strong></div>
 <div class="year-metric"><span>Smart Contract</span><strong>92</strong></div>
@@ -790,7 +790,7 @@ main { width:100% !important; height:auto !important; min-height:0 !important; d
     <div class="year-metric"><span>First Activity</span><strong>Jan 2024</strong></div>
 <div class="year-metric"><span>ETH Transfer</span><strong>64</strong></div>
 <div class="year-metric"><span>Longest Streak</span><strong>31 Days</strong></div>
-<div class="year-metric"><span>Total Volume</span><strong>$8,920</strong></div>
+<div class="year-metric"><span>ETH Volume</span><strong>$8,920</strong></div>
 <div class="year-metric"><span>Total Transaction</span><strong>186</strong></div>
 <div class="year-metric"><span>Wallet Age</span><strong>1 Year</strong></div>
 <div class="year-metric"><span>Smart Contract</span><strong>41</strong></div>
@@ -807,7 +807,7 @@ main { width:100% !important; height:auto !important; min-height:0 !important; d
     <div class="year-metric"><span>First Activity</span><strong>Aug 2023</strong></div>
 <div class="year-metric"><span>ETH Transfer</span><strong>18</strong></div>
 <div class="year-metric"><span>Longest Streak</span><strong>9 Days</strong></div>
-<div class="year-metric"><span>Total Volume</span><strong>$2,480</strong></div>
+<div class="year-metric"><span>ETH Volume</span><strong>$2,480</strong></div>
 <div class="year-metric"><span>Total Transaction</span><strong>42</strong></div>
 <div class="year-metric"><span>Wallet Age</span><strong>4 Months</strong></div>
 <div class="year-metric"><span>Smart Contract</span><strong>8</strong></div>
@@ -831,7 +831,7 @@ main { width:100% !important; height:auto !important; min-height:0 !important; d
       <div class="feature-grid">
         <div class="feature-box"><div class="feature-icon">01</div><div class="feature-label">First Transaction</div><div id="firstTx" class="feature-value">—</div></div>
         <div class="feature-box"><div class="feature-icon">02</div><div class="feature-label">Last Transaction</div><div id="lastTx" class="feature-value">—</div></div>
-        <div class="feature-box"><div class="feature-icon">03</div><div class="feature-label">Total Volume</div><div id="totalVolume" class="feature-value">—</div></div>
+        <div class="feature-box"><div class="feature-icon">03</div><div class="feature-label">ETH Volume</div><div id="totalVolume" class="feature-value">—</div></div>
         <div class="feature-box"><div class="feature-icon">04</div><div class="feature-label">Wallet Age</div><div id="walletAge" class="feature-value">—</div></div>
       </div>
 
@@ -859,9 +859,6 @@ main { width:100% !important; height:auto !important; min-height:0 !important; d
 </footer>
 
   <script>
-    const BASESCAN_API_KEY = "YOUR_BASESCAN_API_KEY";
-    const BASESCAN_URL = "https://api.basescan.org/api";
-
     const walletInput = document.getElementById("walletInput");
     const checkBtn = document.getElementById("checkBtn");
     const loading = document.getElementById("loading");
@@ -905,67 +902,20 @@ main { width:100% !important; height:auto !important; min-height:0 !important; d
       errorBox.style.display = "none";
     }
 
-    async function baseScanRequest(params) {
-      const url = new URL(BASESCAN_URL);
-      Object.entries(params).forEach(([key, value]) => url.searchParams.set(key, value));
-      url.searchParams.set("apikey", BASESCAN_API_KEY);
-
-      const response = await fetch(url.toString());
-      if (!response.ok) throw new Error("BaseScan Request Failed.");
-
-      return await response.json();
-    }
-
-    async function getTransactions(address) {
-      const data = await baseScanRequest({
-        module: "account",
-        action: "txlist",
-        address,
-        startblock: 0,
-        endblock: 99999999,
-        page: 1,
-        offset: 10000,
-        sort: "asc"
-      });
-
-      if (data.status === "0" && data.message !== "No transactions found") {
-        throw new Error(data.result || "Unable To Load Transactions.");
+    async function getHistory(address, action) {
+      const rows = [];
+      for (let page = 1; page <= 100; page++) {
+        const response = await fetch(`/api/history?address=${encodeURIComponent(address)}&action=${action}&page=${page}`);
+        const data = await response.json();
+        if (!response.ok || data.error) throw new Error(data.error || "Unable to load Base history.");
+        rows.push(...data.result);
+        if (!data.hasMore) return rows;
       }
-
-      return Array.isArray(data.result) ? data.result : [];
+      throw new Error("This wallet exceeds the supported history size. No partial totals are shown.");
     }
-
-    async function getTokenTransfers(address) {
-      const data = await baseScanRequest({
-        module: "account",
-        action: "tokentx",
-        address,
-        startblock: 0,
-        endblock: 99999999,
-        page: 1,
-        offset: 10000,
-        sort: "asc"
-      });
-
-      if (data.status === "0" && data.message !== "No transactions found") return [];
-      return Array.isArray(data.result) ? data.result : [];
-    }
-
-    async function getNFTTransfers(address) {
-      const data = await baseScanRequest({
-        module: "account",
-        action: "tokennfttx",
-        address,
-        startblock: 0,
-        endblock: 99999999,
-        page: 1,
-        offset: 10000,
-        sort: "asc"
-      });
-
-      if (data.status === "0" && data.message !== "No transactions found") return [];
-      return Array.isArray(data.result) ? data.result : [];
-    }
+    const getTransactions = address => getHistory(address, "txlist");
+    const getTokenTransfers = address => getHistory(address, "tokentx");
+    const getNFTTransfers = address => getHistory(address, "tokennfttx");
 
     function calculateActiveDays(transactions) {
       const days = new Set();
@@ -1087,7 +1037,7 @@ main { width:100% !important; height:auto !important; min-height:0 !important; d
       let total = 0;
 
       transactions.forEach(tx => {
-        if (!tx.value) return;
+        if (!tx.value || tx.isError === "1") return;
         total += Number(tx.value) / 1e18;
       });
 
@@ -1119,7 +1069,7 @@ main { width:100% !important; height:auto !important; min-height:0 !important; d
       const lending = calculateLending(allTransactions);
 
       const smartContracts = new Set(
-        allTransactions
+        allTransactions.filter(tx => tx.input && tx.input !== "0x" && tx.isError !== "1")
           .filter(tx =>
             tx.to &&
             tx.from &&
@@ -1177,12 +1127,13 @@ main { width:100% !important; height:auto !important; min-height:0 !important; d
         formatNumber(new Set(allTransactions.map(tx => Math.floor(Number(tx.timeStamp) / (7 * 86400)))).size),
         formatNumber(activeMonths), formatDate(last?.timeStamp)
       ]);
-      journey.style.display = "block";
+      renderLiveYears(allTransactions, walletAge);
     }
 
     async function checkWallet() {
       hideError();
       document.getElementById("overall-activity").hidden = true;
+      document.getElementById("wallet-journey").hidden = true;
 
       // Hide the tier preview after checking the wallet, while keeping
       // the heading, subtitle, wallet input and Check Wallet button visible.
@@ -1194,17 +1145,14 @@ main { width:100% !important; height:auto !important; min-height:0 !important; d
 
       const address = walletInput.value.trim();
 
-      if (BASESCAN_API_KEY === "YOUR_BASESCAN_API_KEY") {
-        showDemoWalletJourney(address);
-        return;
-      }
-
       if (!isValidAddress(address)) {
         showError("Please Enter A Valid EVM Wallet Address.");
         walletInput.focus();
         return;
       }
 
+      document.documentElement.classList.add("wallet-mode");
+      document.body.classList.add("wallet-mode");
       checkBtn.disabled = true;
       checkBtn.textContent = "Checking...";
       loading.style.display = "block";
@@ -1263,49 +1211,30 @@ function showOverallActivity(wallet, values, demo = false) {
   overall.hidden = false;
 }
 
-function showDemoWalletJourney(wallet) {
+function renderLiveYears(transactions, walletAge) {
   const section = document.getElementById("wallet-journey");
-  if (!section) return;
-
-  const years = [
-    { year: "2026", first: "Jan 2026", eth: "96", streak: "28 Days", volume: "$11,420", tx: "248", age: "3 Years", contract: "61", deploy: "7", days: "96", weeks: "31", months: "9", last: "Sep 2026" },
-    { year: "2025", first: "Jan 2025", eth: "138", streak: "56 Days", volume: "$18,650", tx: "365", age: "2 Years", contract: "92", deploy: "11", days: "141", weeks: "43", months: "12", last: "Dec 2025" },
-    { year: "2024", first: "Jan 2024", eth: "64", streak: "31 Days", volume: "$8,920", tx: "186", age: "1 Year", contract: "41", deploy: "4", days: "72", weeks: "28", months: "9", last: "Dec 2024" },
-    { year: "2023", first: "Aug 2023", eth: "18", streak: "9 Days", volume: "$2,480", tx: "42", age: "4 Months", contract: "8", deploy: "1", days: "17", weeks: "8", months: "4", last: "Dec 2023" }
-  ];
-
-  const cards = section.querySelectorAll(".year-journey-card");
-  cards.forEach((card, i) => {
-    const d = years[i];
-    if (!d) return;
-    const values = [
-      d.first, d.eth, d.streak, d.volume, d.tx, d.age,
-      d.contract, d.deploy, d.days, d.weeks, d.months, d.last
-    ];
-    card.querySelector(".year-number").textContent = d.year;
-    card.querySelectorAll(".year-metrics strong").forEach((el, j) => {
-      el.textContent = values[j] ?? "—";
-    });
+  const template = section.querySelector(".year-journey-card").cloneNode(true);
+  section.querySelectorAll(".year-journey-card").forEach(card => card.remove());
+  const groups = new Map();
+  transactions.forEach(tx => {
+    const year = new Date(Number(tx.timeStamp) * 1000).getUTCFullYear();
+    if (!groups.has(year)) groups.set(year, []);
+    groups.get(year).push(tx);
   });
-
-  const sum = key => years.reduce((total, row) => total + Number(row[key].replace(/[^0-9.]/g, "")), 0);
-  const latest = years[0];
-  const earliest = years[years.length - 1];
-  showOverallActivity(wallet, [
-    earliest.first, sum("eth").toLocaleString("en-US"),
-    `${Math.max(...years.map(row => parseInt(row.streak, 10)))} Days`,
-    `$${sum("volume").toLocaleString("en-US")}`, sum("tx").toLocaleString("en-US"),
-    latest.age, sum("contract").toLocaleString("en-US"), sum("deploy").toLocaleString("en-US"),
-    sum("days").toLocaleString("en-US"), sum("weeks").toLocaleString("en-US"),
-    sum("months").toLocaleString("en-US"), latest.last
-  ], true);
+  [...groups.keys()].sort((a,b) => b-a).forEach(year => {
+    const rows = groups.get(year);
+    const card = template.cloneNode(true);
+    card.querySelector(".year-number").textContent = year;
+    const contracts = new Set(rows.filter(tx => tx.input && tx.input !== "0x" && tx.to && tx.isError !== "1").map(tx => tx.to.toLowerCase())).size;
+    const values = [formatDate(rows[0].timeStamp), formatNumber(rows.filter(tx => Number(tx.value)>0 && tx.isError !== "1").length), `${calculateStreaks(rows).longest} Days`, formatETH(calculateVolume(rows)*1e18), formatNumber(rows.length), walletAge, formatNumber(contracts), formatNumber(calculateDeploys(rows)), formatNumber(calculateActiveDays(rows).size), formatNumber(new Set(rows.map(tx => Math.floor(Number(tx.timeStamp)/(7*86400)))).size), formatNumber(calculateActiveMonths(rows)), formatDate(rows[rows.length-1].timeStamp)];
+    card.querySelectorAll(".year-metrics strong").forEach((el,i) => el.textContent = values[i]);
+    section.appendChild(card);
+  });
   section.hidden = false;
   document.documentElement.classList.add("wallet-mode");
   document.body.classList.add("wallet-mode");
-  window.scrollTo(0, 0);
-  document.documentElement.scrollTop = 0;
-  document.body.scrollTop = 0;
 }
+
 </script>
 
 
